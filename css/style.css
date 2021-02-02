@@ -1,0 +1,541 @@
+/* resets */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+}
+html,body{
+      height: 100%;
+      background-image: linear-gradient(to top, #718dda 0%, #425d8b 100%);
+      background-size: 300% 300%;
+      animation: bg-animate 2s infinite alternate-reverse;
+}
+html { scroll-behavior: smooth; }
+.clear{
+      clear: both;
+}
+.container{
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 4%;
+}
+a,li{
+      font-size: 18px;
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+}
+
+/* end of resets */
+
+section.bg-main{
+      height: 70vh;
+}
+
+header{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 90px;
+      
+}
+.logo h1>a{
+      color: white;
+      font-size: 32px;
+      margin-left: 200px;
+}
+.logo h1>a:hover{
+      color: white;
+}
+
+/* menu desktop*/
+
+ul.menu-desktop{
+      display: flex;
+      position: fixed;
+      right: 0;
+      padding-right: 200px;
+}
+ul.menu-desktop li{
+      padding: 10px;
+}
+ul.menu-desktop a{
+      text-transform:capitalize;
+      padding: 12px 18px;
+      font-weight: bold;
+      color: white;
+      border-radius: 10px;
+      border: 2px solid white;
+}
+ul.menu-desktop a:hover{
+      text-decoration: underline;
+      background: linear-gradient(#6081bb, #ff94e1);
+}
+
+/* end of desktop menu*/
+
+/* menu mobile*/
+
+ul.menu-mobile{
+      text-align: center;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      border-radius: 10px;
+}
+ul.menu-mobile li{
+      padding: 20px 0;
+      border-radius: 10px;
+      border-bottom: 2px solid white;
+}
+ul.menu-mobile li:hover{
+      background: linear-gradient(#6081bb, #ff94e1);
+      cursor: pointer;
+      border-radius: 5px;
+}
+ul.menu-mobile a{
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 100px; 
+      text-transform:capitalize;
+}
+ul.menu-mobile li:hover a{
+      text-decoration: underline;
+}
+h3.button{
+      position: absolute;
+      right: 30px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      top: 40px;
+      display: none;
+}
+
+/* end of mobile menu*/
+
+/* class menu mobile of animations JS */
+
+.mostrar{
+      position: relative;
+      top: 0;
+      transition: 1s;
+}
+.esconder{
+      position: relative;
+      top: -800px;
+      transition: 1s;
+      
+}
+
+/* end of menu animations*/
+
+/* center content*/
+
+div.main-title{
+      color: white;
+      text-align: center;
+      padding: 20px 2%;
+}
+.main-title h2{
+      font-size: 80px;
+      text-transform: uppercase;
+}
+.main-title p{
+      font-size: 21px;
+      font-style: italic;
+      font-weight: lighter;
+}
+
+/*end of center content*/
+
+section.skills{
+      width: 100%;
+      background: #5c79ac;
+      padding: 30px 0;
+}
+.linguagens-img{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px 0 20px 0;
+}
+.linguagens-img img{
+      width: 100%;
+      max-width: 350px;
+}
+.linguagens{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+}
+.code{
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+      padding-bottom: 50px;
+}
+.code img{
+      width: 100%;
+      max-width: 350px;
+}
+.code h2{
+      padding: 20px 0;
+      font-size: 28px;
+}
+.code p{
+      font-size: 20px;
+      font-style: italic;
+}
+
+/* start position divs js/css */
+
+.skills-content-js{
+      position: relative;
+      top: -100px;
+}
+.skills-content-css{
+      position: relative;
+      top: -100px;
+}
+.css img{
+      position: relative;
+      top: -100px;
+}
+.js img{
+      max-width: 320px;
+      position: relative;
+      top: -100px;
+}
+.js h2{
+      position: relative;
+      top: 15px;
+}
+.js p{
+      position: relative;
+      top: 15px;
+}
+
+/* end position divs js/css */
+
+section.projetos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      background-color: #5c79ac;
+}
+.single{
+      width: 100%;
+      max-width: 450px;
+      padding: 40px 0;
+}
+.single h3{
+      font-size: 60px;
+}
+section.tecnologias{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 0;
+      background-image: linear-gradient(to top, #fbc2eb 0%, #5c79ac 100%);
+}
+.img-title{
+      padding: 10px 0 50px 0;
+}
+.img-title img{
+      width: 100%;
+      max-width: 150px;
+}
+.img-title h2{
+      text-transform: uppercase;
+      padding-top: 20px;
+      font-style: italic;
+}
+.minhas-tecnologias{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;  
+}
+.minhas-tecnologias img{
+      width: 100%;
+      max-width: 180px;
+      padding: 0 20px;
+}
+section.sobre{
+      background-image: linear-gradient(to top,#5c79ac 0%, #fbc2eb 100%);
+      padding: 40px 0;
+}
+section.sobre,.victor{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;      
+}
+.victor{
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0 2%;
+}
+.victor-content{
+      text-align: center;
+}
+.victor-content h5{
+      font-size: 15px;
+      font-style: italic;
+      padding-top: 10px;
+}
+.victor-content h6{
+      font-style: italic;
+      padding-bottom: 10px;
+}
+.victor img{
+      width: 100%;
+      max-width: 320px;
+      border-radius: 50%;
+      padding-right: 25px;
+}
+.victor p{
+      max-width: 600px;
+      font-size: 17px;
+      line-height: 26px;
+      padding-bottom: 20px;
+}
+section.medias{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #5c79ac;
+}
+.redes i{
+      font-size: 28px;
+      padding: 3px;
+}
+.redes a{
+      font-size: 17px;
+}
+.redes h3:hover a{
+      text-decoration: underline;
+      color: white;
+      
+}
+.infos h3>i{
+      font-size: 28px;
+      padding: 3px;
+}
+.infos h3 i.fa-envelope{
+      position: relative;
+      left: -3px;
+      top: 3px;
+}
+.infos h3 i.fa-whatsapp{
+      position: relative;
+      top: 3px;
+}
+footer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      flex-direction: row;
+      background: #5c79ac;
+}
+footer .logo{
+      position: relative;
+      left: -40px;
+}
+.endereco p{
+      padding: 2px;
+      position: relative;
+      left: -155px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  /* keyframes */
+@keyframes bg-animate{
+      0%{
+            background-position: 0% 0%;
+      }
+      30%{
+            background-position: 10% 30%;
+      }
+      60%{
+            background-position: 45% 65%;
+      }
+      100%{
+            background-position: 100% 100%;
+      }
+}
+            /****  medias screen ****/
+
+@media screen and (max-width: 1024px) {
+      .linguagens{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+      }
+      .skills-content-js{
+            top: 0px;
+      }
+      .skills-content-css{
+            top: 0px;
+      }
+      .css img{
+            top: 0px;
+      }
+      .js img{
+            position: relative;
+            top: 0px;
+      }
+      section.projetos{
+            flex-direction: column;
+            padding-top: 50px;
+      }
+}
+@media screen and (max-width: 768px) {
+      ul.menu-desktop{
+            display: none;
+      }
+      header{
+            flex-direction: column;
+            padding-top: 17px;
+            justify-content: center;
+      }
+      .logo h1>a{
+            margin-left: 0;
+      }
+      h3.button{
+            display: block;
+      }
+      .victor p{
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 20px;
+      }
+}
+@media screen and (max-width: 640px) {
+      .main-title h2{
+            font-size: 70px;
+      }
+      .victor p{
+            max-width: 500px;
+            font-size: 15px;
+            line-height: 20px;
+      }
+      .victor{
+            flex-direction: column;
+      }
+      footer .logo,.endereco p{
+            position: relative;
+            left: 0px;
+      }
+}
+@media screen and (max-width: 480px) {
+      .main-title h2{
+            font-size: 50px;
+      }
+      .victor{
+            flex-direction: column;
+      }
+}
+@media screen and (max-width: 375px) {
+      .main-title h2{
+            font-size: 38px;
+      }
+      .main-title p{
+            font-size: 20px;
+            font-weight: normal;
+      }
+      .redes a{
+            font-size: 16px;
+      }
+      .infos h3>i{
+            font-size: 24px;
+      }
+      .infos h3{
+            font-size: 15px;
+      }
+      footer{
+            flex-direction: column;
+            height: auto;
+      }
+      footer .logo{
+            padding: 10px 0;
+      }
+      .endereco{
+            padding: 5px 0 10px 0;
+            font-size: 15px;
+      }
+}
+@media screen and (max-width: 320px) {
+      div.main-title{
+            position: relative;
+            top: -20px;
+      }
+      .main-title h2{
+            font-size: 30px;
+      }
+      .main-title p{
+            font-size: 18px;
+            font-weight: normal;
+      }
+      .code img{
+            width: 80%;
+            max-width: 350px;
+      }
+      .js img{
+            width: 70%;
+      }
+      section.bg-main{
+            height: 80vh;
+      }
+      .endereco p{
+            left: 0px;
+      }
+      footer .logo{
+            left: 0px;
+      }
+      ul.menu-mobile a{
+            padding: 20px 0px; 
+      }
+      
+}
