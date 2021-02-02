@@ -55,6 +55,7 @@ ul.menu-desktop{
       position: fixed;
       right: 0;
       padding-right: 200px;
+      z-index: 999;
 }
 ul.menu-desktop li{
       padding: 10px;
