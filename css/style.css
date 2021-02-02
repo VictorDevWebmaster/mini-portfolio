@@ -37,6 +37,8 @@ header{
       justify-content: start;
       align-items: center;
       height: 90px;
+      position: fixed;
+      z-index: 999;
       
 }
 .logo h1>a{
@@ -55,7 +57,6 @@ ul.menu-desktop{
       position: fixed;
       right: 0;
       padding-right: 200px;
-      z-index: 999;
 }
 ul.menu-desktop li{
       padding: 10px;
@@ -83,6 +84,8 @@ ul.menu-mobile{
       border-left: 2px solid white;
       border-right: 2px solid white;
       border-radius: 10px;
+      position: relative;
+      z-index: 9999;
 }
 ul.menu-mobile li{
       padding: 20px 0;
