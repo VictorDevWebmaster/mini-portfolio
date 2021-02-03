@@ -436,6 +436,9 @@ footer .logo{
             line-height: 24px;
             padding-bottom: 20px;
       }
+      header{
+            position: initial;
+      }
 }
 @media screen and (max-width: 640px) {
       .main-title h2{
