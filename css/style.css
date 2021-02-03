@@ -124,7 +124,7 @@ h3.button{
 
 .mostrar{
       position: relative;
-      top: 90px;
+      top: 0px;
       transition: 1s;
 }
 .esconder{
@@ -141,7 +141,7 @@ h3.button{
 div.main-title{
       color: white;
       text-align: center;
-      padding: 80px 2%;
+      padding: 20px 2%;
 }
 .main-title h2{
       font-size: 80px;
@@ -466,6 +466,11 @@ footer .logo{
       }
 }
 @media screen and (max-width: 375px) {
+      div.main-title{
+            padding: 0px 2%;
+            position: relative;
+            top: -100px;
+      }
       .main-title h2{
             font-size: 38px;
       }
@@ -499,8 +504,9 @@ footer .logo{
 }
 @media screen and (max-width: 320px) {
       div.main-title{
+            padding: 0px 2%;
             position: relative;
-            top: -20px;
+            top: 0px;
       }
       .main-title h2{
             font-size: 30px;
@@ -527,5 +533,6 @@ footer .logo{
       }
       ul.menu-mobile a{
             padding: 20px 0px;      
-      }   
+      }
+      
 }
