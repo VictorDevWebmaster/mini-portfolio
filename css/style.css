@@ -502,10 +502,10 @@ footer .logo{
             padding: 110px 2%;
       }
       ul.menu-mobile li{
-            padding: 10px 0;
+            padding: 11px 0;
       }
       ul.menu-mobile a{
-            padding: 10px 100px; 
+            padding: 11px 100px; 
       }
 }
 @media screen and (max-width: 320px) {
