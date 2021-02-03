@@ -30,7 +30,7 @@ a,li{
 /* end of resets */
 
 section.bg-main{
-      height: 70vh;
+      height: 80vh;
 }
 header{
       display: flex;
@@ -39,7 +39,7 @@ header{
       height: 90px;
       position: fixed;
       z-index: 999;
-      
+      width: 100%;
 }
 .logo h1>a{
       color: white;
@@ -115,6 +115,7 @@ h3.button{
       cursor: pointer;
       top: 40px;
       display: none;
+      right: 30px;
 }
 
 /* end of mobile menu*/
@@ -123,7 +124,7 @@ h3.button{
 
 .mostrar{
       position: relative;
-      top: 0;
+      top: 90px;
       transition: 1s;
 }
 .esconder{
@@ -140,7 +141,7 @@ h3.button{
 div.main-title{
       color: white;
       text-align: center;
-      padding: 20px 2%;
+      padding: 80px 2%;
 }
 .main-title h2{
       font-size: 80px;
@@ -488,6 +489,9 @@ footer .logo{
       .endereco{
             padding: 5px 0 10px 0;
             font-size: 15px;
+      }
+      div.main-title{
+            padding: 110px 2%;
       }
 }
 @media screen and (max-width: 320px) {
